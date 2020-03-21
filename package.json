@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TacAM-DEV/login-backend#readme",
   "dependencies": {
+    "@koa/router": "^8.0.8",
     "koa": "^2.11.0"
   }
 }
