@@ -1,5 +1,5 @@
-const Koa = require('koa');
-const Router = require('@koa/router');
+const Koa = require('koa'),
+      Router = require('@koa/router');
 
 let login = require('./src/login');
 
@@ -11,11 +11,11 @@ router.get('/', (ctx, next) => {
 });
 
 router.get('/signup', (ctx, next) => {
-    ctx.body = login.signup;
+    ctx.body = login.signup(ctx);
 })
 
 router.get('/signin', (ctx, next) => {
-    ctx.body = login.signin;
+    ctx.body = login.signin(ctx);
 })
 
 app
